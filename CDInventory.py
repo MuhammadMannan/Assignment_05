@@ -31,6 +31,7 @@ while True:
         for row in objFile:
             lstRow = row.strip().split(',') #Here we import the data into memory in the way we want
             dicRow = {'Id':int(lstRow[0]), 'Title': lstRow[1], 'Artist':lstRow[2]} #Here we add our imported data into our 2d table
+            lstTbl.append(dicRow.values())
             print(lstRow)
         print('Data loaded from inventory file')
         objFile.close()
